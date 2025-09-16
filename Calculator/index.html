@@ -8,33 +8,31 @@
 </head>
 <body>
     <h1>Calculator</h1>
-    <div class="frame">
-        <div class="screen" id = "equation"></div>
-        <div class="screen" id = "result"></div>
-
-        <div class="num">7</div>
-        <div class="num">8</div>
-        <div class="num">9</div>
-        <div class="num">4</div>
-        <div class="num">5</div>
-        <div class="num">6</div>
-        <div class="num">1</div>
-        <div class="num">2</div>
-        <div class="num">3</div>
-        <div class="num">.</div>
-        <div class="num">0</div>
-        <div class="num">x10^</div>
-
-        <div class = "remove" id="del">del</div>
-        <div class = "remove" id="clear">C</div>
-
-        <div class="operation">*</div>
-        <div class="operation">/</div>
-        <div class="operation">+</div>
-        <div class="operation">-</div>
-
-        <div class="p-eq" id = "parenthesis">()</div>
-        <div class="p-eq" id = equal>=</div>
+    <div class="calc-frame">
+        <div class="equation">Equation</div>
+        <div class="answer">Answer</div>
+        <div class="input">
+            <button class = "num">7</button>
+            <button class = "num">8</button>
+            <button class = "num">9</button>
+            <button class = "del" id = "backspace">del</button>
+            <button class = "del" id = "clear">C</button>
+            <button class = "num">4</button>
+            <button class = "num">5</button>
+            <button class = "num">6</button>
+            <button class = "operand" id = "multiply">*</button>
+            <button class = "operand" id = "divide">/</button>
+            <button class = "num">1</button>
+            <button class = "num">2</button>
+            <button class = "num">3</button>
+            <button class = "operand" id = "add">+</button>
+            <button class = "operand" id = "subtract">-</button>
+            <button class = "num">.</button>
+            <button class = "num">0</button>
+            <button class = "num" id = "tens-power">x10^</button>
+            <button class = "misc" id = "parenthesis">()</button>
+            <button class = "misc" id = "equal">=</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
