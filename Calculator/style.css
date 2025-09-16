@@ -1,4 +1,83 @@
-*{
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.calc-frame {
+    background-color: rgba(254, 120, 147, 0.5);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.calc-frame>* {
+    flex: 1;
+    min-width: 150px;
+    padding: 5px;
+    font-size: 25px;
+}
+
+.equation {
+    background-color: rgb(248, 88, 141);
+    border: 2px solid black;
+    min-height: 60px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin: 20px 15px 2px 15px;
+}
+
+.answer {
+    background-color: rgb(211, 130, 167);
+    border: 2px solid black;
+    min-height: 30px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin: 2px 15px 20px 15px;
+}
+
+.input {
+    margin: 3px 5px 20px 5px;
+    /* background-color: bisque; */
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+
+}
+
+.input>* {
+    min-width: 65px;
+    min-height: 65px;
+    border-radius: 15px;
+    font-size: 30px;
+}
+.num{
+    background-color: rgb(221, 121, 104);
+}
+#decimal {
+    font-size: 50px;
+}
+.del{
+    background-color: rgb(253, 81, 81);
+}
+.operand {
+    font-size: 40px;
+    background-color: rgb(226, 88, 111);
+}
+
+.misc {
+    font-size: 40px;
+    background-color: rgb(251, 175, 175);
 }
