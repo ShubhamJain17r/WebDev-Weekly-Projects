@@ -27,24 +27,29 @@ body {
     min-width: 150px;
     padding: 5px;
     font-size: 25px;
+    color: black;
 }
 
-.equation {
+#equation {
     background-color: rgb(252, 137, 175);
     border: 2px solid black;
     min-height: 60px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     margin: 20px 15px 2px 15px;
+    text-align: end;
+    resize: none;
+    overflow: hidden;
 }
 
-.answer {
+#answer {
     background-color: rgb(211, 130, 167);
     border: 2px solid black;
     min-height: 30px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     margin: 2px 15px 20px 15px;
+    text-align: end;
 }
 
 .input {
@@ -64,15 +69,19 @@ button {
     font-size: 35px;
     font-weight: 700;
 }
-.num{
+
+.num {
     background-color: rgb(221, 121, 104);
 }
+
 #decimal {
     font-size: 50px;
 }
-.del{
+
+.del {
     background-color: rgb(253, 81, 81);
 }
+
 .operand {
     font-size: 45px;
     background-color: rgb(226, 88, 111);
