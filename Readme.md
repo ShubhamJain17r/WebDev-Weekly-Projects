@@ -1,2 +1,4 @@
 ## Author : Shubham Jain
-In this repo, I aim to complete one WebDev project per week.
+Projects Summary:
+* Project 1 : **Calculator** using HTML, CSS and JS. 
+    Current Version - 1.0
