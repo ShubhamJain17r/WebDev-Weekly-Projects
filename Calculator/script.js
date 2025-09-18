@@ -2,8 +2,31 @@ const equation = document.getElementById("equation");
 const answer = document.getElementById("answer");
 const buttons = document.querySelectorAll("button");
 
-// 🚫 Block keyboard input (but still allow cursor movement)
-equation.addEventListener("keypress", e => e.preventDefault());
+equation.addEventListener("keydown", e => {
+  const allowed = [
+    "0","1","2","3","4","5","6","7","8","9","+","-","*","/","(",")",".","Backspace","Delete","ArrowLeft","ArrowRight","Home","End","Escape"
+  ];
+
+  // allow Enter as "="
+  if (e.key === "Enter") {
+    e.preventDefault();
+    document.querySelector('button[value="="]').click();
+    return;
+  }
+
+  // Esc to clear
+  if (e.key === "Escape") {
+    e.preventDefault();
+    document.querySelector('button[value="C"]').click();
+    return;
+  }
+
+  // block everything else
+  if (!allowed.includes(e.key)) {
+    e.preventDefault();
+  }
+});
+
 answer.addEventListener("keypress", e => e.preventDefault());
 buttons.forEach(btn => {
     btn.addEventListener("click", () => {
