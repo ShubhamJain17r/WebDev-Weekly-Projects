@@ -2,7 +2,7 @@
 ## Author : Shubham Jain
 This calculator is referenced from Casio fx-100MS scientific calculator. I tried to replicate its look. In this version the calculator just does simple addition, subtraction, multiplication and division. In later versions; in upcoming weeks; i would improve it for more functionality.
 
-<b>I changed the color theme of the calculator. Might change later ;)</b>
+**I changed the color theme of the calculator. Might change later ;)**
 
 ### Version 1.0:
 
@@ -33,5 +33,13 @@ This was my first Web Development project. I'm very happy to complete it with mi
 
 #### Daily Progress:
 * Day 1 : Enabling **Valid** keyboard Input. 
+* Day 2 : Used mathjs instead of eval for valid syntax checking
 
 > Enabled keyboard input : numbers `0-9`, `ArrowLeft`, `ArrowRight`, `Escape`, `Backspace`, `Home`, `End`, `Delete`, `(`, `)`, `+`, `-`, `/`, `*` , `.`
+
+> Intead of eval, i used mathjs library in this. It helped in checking for valid mathematical syntax. I used chatgpt in this for implimenting it and making my code look clean. I also tried to impliment checking syntaxes like `++`, `-+` etc.
+
+> It alos solved octal number bug in my code.
+
+**Next Steps** : 
+* In next Version, i will implement square of a number, square root and other mathematical functions too.
